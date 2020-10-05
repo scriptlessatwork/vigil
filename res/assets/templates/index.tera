@@ -29,31 +29,6 @@
   </head>
 
   <body>
-    <header>
-      <div class="wrapper">
-        <div class="header-inner">
-          <a href="/" class="logo">
-            <img src="{{ config.logo_url | escape }}" alt="" />
-
-            <span class="logo-label font-sans-semibold">Status</span>
-          </a>
-
-          <nav>
-            <ul>
-              <li>
-                <a href="{{ config.support_url | escape }}" style="background-color: {{ config.logo_color | escape }};" class="nav-support font-sans-semibold">Contact support</a>
-              </li>
-
-              <li>
-                <a href="{{ config.website_url | escape }}" target="_blank" class="nav-website font-sans-bold">Go to website</a>
-              </li>
-            </ul>
-          </nav>
-
-          <div class="clear"></div>
-        </div>
-      </div>
-    </header>
 
     <aside class="status-{{ states.status | escape }}-background">
       <div class="wrapper">
